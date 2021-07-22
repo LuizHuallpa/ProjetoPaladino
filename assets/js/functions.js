@@ -266,7 +266,7 @@ $(document).ready(function() {
 function scrollDown(){
     setTimeout(function() {
         $("html, body").animate({ scrollTop: $(document).height() }, 'slow');
-     }, 1000);
+     }, 2000);
    }
 
 function checkScreenSize(){
