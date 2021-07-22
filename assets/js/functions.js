@@ -254,4 +254,24 @@ $(document).ready(function(){
         closeEffect: "none"
     });
 });
-   
+  
+
+
+//Função de auto scroller
+$(document).ready(function() {
+    checkScreenSize();
+ 
+});
+
+function scrollDown(){
+    setTimeout(function() {
+        $("html, body").animate({ scrollTop: $(document).height() }, 'slow');
+     }, 1000);
+   }
+
+function checkScreenSize(){
+    var newWindowWidth = $(window).width();
+    if (newWindowWidth < 760) {
+        scrollDown();
+    }
+}
