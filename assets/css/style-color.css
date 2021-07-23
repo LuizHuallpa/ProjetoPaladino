@@ -3323,20 +3323,6 @@ label {
   }
 }
 
-/* @keyframes Grey {
-  from {
-    height: 400px;
-    width: 200px;
-	top:30%
-	
-  }
-  to {
-	
-    height: 600px;
-    width: 400px;
-	top:10%;
-  }
-} */
 
 .deadline{
   background-color:RGB(167, 29, 27);
