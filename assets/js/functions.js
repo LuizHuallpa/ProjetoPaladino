@@ -276,17 +276,26 @@ function checkScreenSize(){
     }
 }
 
-jQuery("input.telefone")
-        .mask("(99) 9999-9999?9")
-        .focusout(function (event) {  
-            var target, phone, element;  
-            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
-            phone = target.value.replace(/\D/g, '');
-            element = $(target);  
-            element.unmask();  
-            if(phone.length > 10) {  
-                element.mask("(99) 99999-999?9");  
-            } else {  
-                element.mask("(99) 9999-9999?9");  
-            }  
-        });
+function mask(o, f) {
+    setTimeout(function() {
+      var v = mphone(o.value);
+      if (v != o.value) {
+        o.value = v;
+      }
+    }, 1);
+  }
+  
+  function mphone(v) {
+    var r = v.replace(/\D/g, "");
+    r = r.replace(/^0/, "");
+    if (r.length > 10) {
+      r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+    } else if (r.length > 5) {
+      r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+    } else if (r.length > 2) {
+      r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+    } else {
+      r = r.replace(/^(\d*)/, "($1");
+    }
+    return r;
+  }

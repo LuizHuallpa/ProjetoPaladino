@@ -255,7 +255,7 @@ h6 {
 }
 
 p {
-  color: #aaaaaa;
+  color: #333333;
   font-size: 13px;
   font-weight: 400;
   line-height: 22px;
@@ -1109,7 +1109,7 @@ section {
 }
 
 .bg-white {
-  background-color: #ffffff !important;
+  background-color: #d2d2d2 !important;
 }
 
 .bg-dark {
@@ -1700,7 +1700,7 @@ label {
 
 /* Header Fixed */
 .header-fixed .affix {
-  background-color: #ffffff;
+  background-color: #d2d2d2;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
   -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
@@ -2188,9 +2188,9 @@ label {
   line-height: 70px;
   margin-bottom: 10px;
   text-transform: capitalize;
-  background-color: hsla(0, 0%, 82%, 0.50) ;
+  /* background-color: hsla(0, 0%, 82%, 0.50) ; */
   
-  padding: 50px;
+  padding: 0 50px;
 }
 
 .colorLogo {
@@ -2198,7 +2198,7 @@ label {
 }
 
 .slider .slide--bio {
-  color: #d2d2d2;
+  color: #333333;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -2452,6 +2452,22 @@ label {
 /*------------------------------------*\
     #Features
 \*------------------------------------*/
+.feature-2{
+  background-image: url('assets/images/background/bg1.jpg');
+  position: relative;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
 .feature-panel {
   position: relative;
 }
@@ -3390,3 +3406,12 @@ label {
 /* 333333 - cinza escuro
 d2d2d2- cinza claro
 a71d1b- vermelho */
+
+.semiCirc{
+  position: absolute;
+  height: 120%;
+  z-index: 0;
+  opacity: 90%;
+  transform: rotate(-90deg);
+
+}

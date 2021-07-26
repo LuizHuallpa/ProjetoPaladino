@@ -78,10 +78,13 @@
 		============================================= -->
 		<section id="slider" class="section slider slider-form">
 			<div class="slide--item bg-overlay bg-overlay-dark">
+				<img class="semiCirc" src="assets/images/background/tranparente_Prancheta 1.png">
 				<div class="bg-section">
-					<img src="assets/images/background/bg1.jpg" alt="bg">
+					<img src="assets/images/background/bg1.jpg">
 				</div>
-				<div class="container">
+				
+				<div class="container" style="z-index:5;">
+					
 					<div class="row row-content">
 						<div class="col-xs-12 col-sm-6 col-md-5">
 							<div class="slide--headline"><img src="assets/images/logo/Logo Paladino.svg"></div>
@@ -89,6 +92,7 @@
 							<div class="slide--video">
 								<a class="btn--video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4"><i class="fa fa-play"></i>Vej o nosso video</a>
 							</div>
+							
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-2">
 							<div class="slide--action">
@@ -96,16 +100,16 @@
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
 								<form class="mb-0">
 									<div>
-										<label>first name</label>
-										<input type="text" name="first-name" class="form-control">
+										<label>Nome</label>
+										<input type="text" name="nome" class="form-control">
 									</div>
 									<div>
-										<label>last name</label>
-										<input type="text" name="last-name" class="form-control">
+										<label>Telefone</label>
+										<input type="text" name="telefone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" class="form-control">
 									</div>
 									<div>
 										<label>Email</label>
-										<input type="text" name="email" class="form-control">
+										<input type="email" name="email" class="form-control">
 									</div>
 									<div>
 										<input type="submit" class="btn btn-danger btn--block mt-10" value="signup me now">
@@ -177,27 +181,38 @@
 			<!-- .container end -->
 		</section>
 		<!-- #feature2 end -->
-		<section id="slider2" class="section slider2 slider-form">
-			<div class="slide--item bg-overlay bg-overlay-dark">
-				<div class="bg-section">
-					<img src="assets/images/background/bg2.jpg" alt="bg2">
-				</div>
-				<div class="container">
-					<div class="row row-content">
-						<div class="col-xs-12 col-sm-6 col-md-5">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deserunt blanditiis velit quis placeat, veniam consequatur voluptatibus quo repudiandae saepe ex totam aspernatur incidunt perferendis, fuga expedita obcaecati maiores necessitatibus debitis porro enim esse reiciendis. Qui ab omnis dolores porro, repellendus nobis animi officiis voluptatum mollitia, temporibus, totam cupiditate tempora.</p>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quia nemo odit, laboriosam vero eaque veniam, non quasi voluptatum pariatur incidunt debitis culpa accusantium harum soluta autem et cum suscipit modi mollitia veritatis laudantium. Quo molestiae officiis doloremque debitis nihil modi quam at? Totam cum aut vero officiis placeat et odit minus, repellendus, ratione impedit, deserunt fugit veritatis repellat dolor.</p>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-2">
-
+		<!-- Feature #2
+		============================================= -->
+		<section id="feature2" class="section feature feature-2" style="background-image: url(assets/images/background/bg2.jpg);">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+						<div class="heading heading-1 mb-80 text--center wow fadeInUp" data-wow-duration="1s">
+							<h2 class="heading--title">Our features suits all types</h2>
 						</div>
 					</div>
-					<!-- .row end -->
+					<!-- .col-md-6 end -->
 				</div>
-				<!-- .container end -->
+				<!-- .row end -->
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp">
+						<img class="img-responsive" src="assets/images/background/bg-2.jpg" alt="device"/>
+					</div>
+					<!-- .col-md-6 end -->
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<div class="wow fadeInUp" data-wow-duration="1s">
+							<h3 class="">Works on all platforms</h3>
+							<p class="">Duis aute irure dolor in reprehenderit in voluptate esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.</p>
+						</div>
+					</div>
+					<!-- .col-md-6 end -->
+
+				</div>
+				<!-- .row end -->
 			</div>
-			<!-- .slide-item end -->
+			<!-- .container end -->
 		</section>
+		<!-- #feature2 end -->
 
 
 		<!-- reviews
@@ -346,22 +361,18 @@
 
 		<!-- Clients Carousel Section
 		=== === === === === === === === === === === === === === -->
-		<section id="clients" class="section clients clients-carousel bg-theme">
+		<section id="clients" class="section clients bg-theme">
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12">
-						<div class="carousel carousel-dots" data-slide="5" data-slide-res="2" data-autoplay="false" data-nav="false" data-dots="false" data-space="30" data-loop="true" data-speed="800">
-							<!-- Client #1 -->
-							<div class="client">
-								<img class="center-block" src="assets/images/logo/Invest.svg" alt="client">
-							</div>
-
-							<!-- Client #2 -->
-							<div class="client">
-								<img class="center-block" src="assets/images/logo/broker.png" alt="client">
-							</div>
-						</div>
+				<div class="row">		
+					<!-- Client #1 -->
+					<div class="col-lg-6">
+						<img class="img-fluid rounded float-left" src="assets/images/logo/Invest.svg" alt="client">
 					</div>
+
+					<!-- Client #2 -->
+					<div class="col-lg-6">
+						<img class="img-fluid rounded float-right" src="assets/images/logo/Brokers.svg" alt="client">
+					</div>			
 					<!-- .col-md-12 end -->
 				</div>
 				<!-- .row end -->
