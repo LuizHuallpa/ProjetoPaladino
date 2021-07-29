@@ -1475,6 +1475,28 @@ label {
   line-height: 1;
   margin-bottom: 30px;
   text-transform: capitalize;
+  background-color: #d2d2d2;
+  color: #333333;
+  padding: 10px;
+  opacity: 70%;
+}
+
+.List{
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 30px;
+  background-color: #d2d2d2;
+  color: #333333;
+  padding: 10px;
+  opacity: 70%;
+  
+}
+
+.List h3{
+  color: #333333;
+
 }
 
 .heading .heading--desc {
@@ -2267,7 +2289,7 @@ label {
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #333333;
 }
 
 .btn--video i {
@@ -2276,10 +2298,10 @@ label {
   line-height: 56px;
   text-align: center;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #333333;
   font-size: 12px;
   font-weight: 400;
-  color: #363636;
+  color: #d2d2d2;
   margin-right: 15px;
 }
 
@@ -2288,8 +2310,8 @@ label {
 }
 
 .btn--video:hover i {
-  background: #363636;
-  color: #ffffff;
+  background: #d2d2d2;
+  color: #333333;
 }
 
 .slider .bg-ytvideo {
@@ -2589,9 +2611,7 @@ label {
 .feature-2 h3 {
   font-size: 26px;
   font-weight: 400;
-  margin-bottom: 35px;
-  padding-top: 80px;
-  text-transform: capitalize;
+  
 }
 
 .feature-2 p {
@@ -3352,6 +3372,10 @@ label {
 
 /*	gallery */
 
+.portfolio{
+ background-color: #333333;
+}
+
 .gallery-title{
     font-size: 36px;
     color: #a71d1b;
@@ -3364,7 +3388,7 @@ label {
     border: 2px solid #a71d1b;
 	padding:5px 10px;
     text-align: center;
-    color: #333333;
+    color: #d2d2d2;
     margin-bottom: 30px;
 	background:transparent;
 }
@@ -3414,4 +3438,50 @@ a71d1b- vermelho */
   opacity: 90%;
   transform: rotate(-90deg);
 
+}
+
+/* Footer */
+
+footer {
+  overflow: hidden;
+  background: #333333;
+  color: #9b8989 !important;
+  Padding:20px;
+  margin-bottom: 0;
+  padding-bottom: 0
+}
+
+footer p{
+  color: #9b8989 !important;
+  font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+small {
+  font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.bold-text {
+  color: #9b8989 !important
+}
+
+.mt-55 {
+  margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+footer h3 {
+  font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.social {
+  font-size: 21px !important
+}
+
+.rights {
+  font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.logoFooter img{
+  max-height:160px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }

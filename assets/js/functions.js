@@ -254,8 +254,8 @@ $(document).ready(function(){
         closeEffect: "none"
     });
 });
+   
   
-
 
 //Função de auto scroller
 $(document).ready(function() {
