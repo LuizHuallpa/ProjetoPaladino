@@ -3489,12 +3489,14 @@ footer h3 {
   margin-left: 20px;
 }
 
+.texto3d{
+  color:#d2d2d2;
+}
 
 .texto3d h2{
-  
   padding:20px;
-  color:#a71d1b;
   margin:0;
+  color:#a71d1b;
 }
 
 .container-fluid{
