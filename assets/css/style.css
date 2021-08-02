@@ -2508,6 +2508,7 @@ label {
   transition: all 0.3s linear;
   display: inline-block;
   max-width: 50%;
+  max-height: 70px;
 }
 
 .feature-panel .feature--icon:hover img {
@@ -3376,7 +3377,8 @@ label {
 /*	gallery */
 
 .portfolio{
- background-color: #333333;
+ background-color: #333333; 
+ padding-top:0;
 }
 
 .gallery-title{
