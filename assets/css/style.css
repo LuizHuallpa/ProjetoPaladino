@@ -2771,6 +2771,7 @@ label {
   background-color: #fff;
   padding-top: 47px;
   padding-bottom: 47px;
+ 
 }
 
 .footer--copyright,
@@ -3453,8 +3454,15 @@ footer {
   color: #9b8989 !important;
   Padding:20px;
   margin-bottom: 0;
-  padding-bottom: 0
+  padding-bottom: 0;
+  font-size:18px;
 }
+
+/* footer iframe{
+  margin:5px;
+} */
+
+
 
 footer p{
   color: #9b8989 !important;
@@ -3486,7 +3494,7 @@ footer h3 {
 }
 
 .logoFooter img{
-  max-height:160px;
+  max-height:170px;
   margin-bottom: 20px;
   margin-left: 20px;
 }
