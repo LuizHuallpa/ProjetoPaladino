@@ -1673,7 +1673,7 @@ label {
 /* Menu Level #1 */
 .navbar-nav > li > a:before {
   position: absolute;
-  bottom: -1px;
+  bottom: 65px;
   left: 0;
   right: 0;
   margin: auto;
@@ -3543,7 +3543,7 @@ footer h3 {
   right: 0px;
   height: 900px;
   width: 500px;
-  opacity: 50%;
+  opacity: 70%;
   top: 5%;
   z-index: 0;
   /* animation: Red 5s linear 2s infinite alternate; */
@@ -3557,7 +3557,7 @@ footer h3 {
   right: 0px;
   height: 800px;
   width: 380px;
-  opacity: 50%;
+  opacity: 70%;
   top: 20%;
   z-index: 0;
 }
@@ -3586,4 +3586,34 @@ footer h3 {
   top: 4%;
   z-index: 0;
   margin-top:50px;
+}
+
+.whatsIcon{
+  position:fixed;
+  bottom:40px;
+  right:10px;
+  font-size: 60px;
+  animation: nudge 2s linear infinite;
+  cursor:pointer;
+  z-index:99;
+}
+
+.logosFooter{
+  margin-top:50px;
+}
+
+
+@keyframes nudge {
+  20%,
+  100% {
+    transform: translate(0, 0);
+  }
+  0% {
+    transform: translate(0, 50px);
+    transform: rotate(50deg);
+  }
+  10% {
+    transform: translate(0, -50px);
+    transform: rotate(-50deg);
+  }
 }
