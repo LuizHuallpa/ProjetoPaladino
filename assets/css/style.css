@@ -438,8 +438,8 @@ ul {
 }
 
 section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   overflow: hidden;
 }
 
@@ -2489,17 +2489,19 @@ label {
 
 }
 
-.feature-panel {
-  position: relative;
-  margin-bottom: 10px;
+.feature-panel > .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-/* .feature-panel .feature--icon {
-  color: #a71d1b;
-  font-size: 55px;
-  line-height: 1;
-  margin-bottom: 35px;
-} */
+.feature-box{
+  padding: 20px;
+  
+}
+
+
 
 .feature-panel .feature--icon img {
   -webkit-transition: all 0.3s linear;
@@ -2631,9 +2633,9 @@ label {
     margin-bottom: 30px;
   }
 
-  .feature-panel .feature--icon {
+  /* .feature--icon {
     margin-bottom: 10px;
-  }
+  } */
 
   .feature img {
     max-width: 100%;
@@ -2772,6 +2774,12 @@ label {
   padding-top: 47px;
   padding-bottom: 47px;
  
+}
+
+.hbrFooter img{
+  padding:5px 5px 5px 0;
+  margin:5px;
+  max-width: 180px;
 }
 
 .footer--copyright,
@@ -3384,7 +3392,7 @@ label {
 
 .gallery-title{
     font-size: 36px;
-    color: #a71d1b;
+    color: #d2d2d2;
     text-align: center;
     font-weight: 500;
     margin-bottom: 70px;
@@ -3451,7 +3459,7 @@ a71d1b- vermelho */
 footer {
   overflow: hidden;
   background: #333333;
-  color: #9b8989 !important;
+  color: #333333 !important;
   Padding:20px;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -3465,7 +3473,7 @@ footer {
 
 
 footer p{
-  color: #9b8989 !important;
+  color: #333333 !important;
   font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
 }
 
@@ -3474,7 +3482,7 @@ small {
 }
 
 .bold-text {
-  color: #9b8989 !important
+  color: #333333 !important
 }
 
 .mt-55 {
@@ -3506,10 +3514,76 @@ footer h3 {
 .texto3d h2{
   padding:20px;
   margin:0;
-  color:#a71d1b;
+  color:#d2d2d2;
 }
 
 .container-fluid{
   padding:0;
 
+}
+
+.googleMap{
+  padding-top: 50px;
+}
+
+.paisQuadrados{
+  position: relative;
+}
+
+.frames{
+  z-index: 50;
+  position:relative;
+}
+
+
+.quadradoPaladino1 {
+  border: 2px solid RGB(167, 29, 27, 0.7);
+  border-right: 0;
+  position: absolute;
+  right: 0px;
+  height: 900px;
+  width: 500px;
+  opacity: 50%;
+  top: 5%;
+  z-index: 0;
+  /* animation: Red 5s linear 2s infinite alternate; */
+  margin-top:50px;
+}
+
+.quadradoPaladinoGrey1 {
+  border: 2px solid #d2d2d2;
+  border-right: 0;
+  position: absolute;
+  right: 0px;
+  height: 800px;
+  width: 380px;
+  opacity: 50%;
+  top: 20%;
+  z-index: 0;
+}
+
+
+.quadradoPaladino2 {
+  border: 2px solid RGB(167, 29, 27, 0.7);
+  border-left: 0;
+  position: absolute;
+  left: 0px;
+  height: 800px;
+  width: 300px;
+  opacity: 70%;
+  top: 15%;
+  z-index: 0;
+}
+
+.quadradoPaladinoGrey2 {
+  border: 2px solid #d2d2d2;
+  border-left: 0;
+  position: absolute;
+  left: 0px;
+  height: 800px;
+  width: 400px;
+  opacity: 70%;
+  top: 4%;
+  z-index: 0;
+  margin-top:50px;
 }
