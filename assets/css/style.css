@@ -1749,7 +1749,7 @@ label {
 
 .header-fixed .navbar.affix .navbar-nav > li > a:hover::before,
 .header-fixed .navbar.affix .navbar-nav > li.active > a:before {
-  background-color: #222222;
+  background-color: #a71d1b;
 }
 
 /* Header Centered */
