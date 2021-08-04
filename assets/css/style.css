@@ -3607,7 +3607,7 @@ footer h3 {
 }
 
 .nudge{
-  animation: nudge 2s linear infinite;
+  animation: nudge 0.5s linear infinite;
 }
 
 .size{
@@ -3652,12 +3652,12 @@ footer h3 {
     transform: translate(0, 0);
   }
   0% {
-    transform: translate(0, 50px);
-    transform: rotate(50deg);
+    transform: translate(1, 50px);
+    transform: rotate(30deg);
   }
   10% {
     transform: translate(0, -50px);
-    transform: rotate(-50deg);
+    transform: rotate(-30deg);
   }
 }
 
