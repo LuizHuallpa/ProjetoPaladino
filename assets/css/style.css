@@ -3591,11 +3591,12 @@ footer h3 {
 .whatsIcon{
   position:fixed;
   bottom:40px;
-  right:10px;
-  font-size: 60px;
+  right:20px;
+  font-size: 80px;
   animation: nudge 2s linear infinite;
   cursor:pointer;
   z-index:99;
+  mix-blend-mode:color-burn;
 }
 
 .logosFooter{
