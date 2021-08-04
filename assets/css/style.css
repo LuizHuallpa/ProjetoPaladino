@@ -3611,14 +3611,18 @@ footer h3 {
   bottom:120px;
   right:35px;
   z-index:99;
-  color:#333333;
-  background-color:#d2d2d2;
+  color:#d2d2d2;
+  background-color:#333333;
   padding: 10px;
-  visibility:hidden;
+  /* visibility:hidden; */
   border-radius:20px;
-  opacity:95%;
+  opacity:70%;
   border:1px #333333 line;
 
+}
+
+.bolhaWhats h6{
+  color: #d2d2d2;
 }
 
 .nudge{

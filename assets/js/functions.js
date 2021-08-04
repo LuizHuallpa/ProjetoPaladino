@@ -300,6 +300,8 @@ function mask(o, f) {
     return r;
   }
 
+
+  //Whats ANimmation change
   window.onscroll = function scrollFunctionWhats() {
   var whats =  document.getElementById("whatsFixo")
   if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
@@ -308,5 +310,16 @@ function mask(o, f) {
     } else {
         whats.classList.add('nudge');
         whats.classList.remove('size');
+    }
+  }
+
+
+  //Show Hide 
+  function showHide() {
+    var x = document.getElementById("bolhaWhats");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
     }
   }
