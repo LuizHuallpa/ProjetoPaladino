@@ -3597,7 +3597,7 @@ footer h3 {
 .whatsIcon{
   position:fixed;
   bottom:40px;
-  right:20px;
+  right:15px;
   font-size: 80px;
   animation: nudge 2s linear infinite;
   cursor:pointer;
@@ -3624,6 +3624,7 @@ footer h3 {
   max-height: 80px;
   margin-top:0!important;
   padding-top:0!important;
+  visibility:hidden;
 }
 
 @media(max-width:768px){
