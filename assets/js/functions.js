@@ -299,3 +299,14 @@ function mask(o, f) {
     }
     return r;
   }
+
+  window.onscroll = function scrollFunctionWhats() {
+  var whats =  document.getElementById("whatsFixo")
+  if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+        whats.classList.remove('nudge');
+        whats.classList.add('size');
+    } else {
+        whats.classList.add('nudge');
+        whats.classList.remove('size');
+    }
+  }
