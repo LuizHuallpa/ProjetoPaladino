@@ -1728,6 +1728,7 @@ label {
   -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
   display: block;
+  opacity:85%
 }
 
 .header-fixed:not(.header-light) .navbar .logo-dark {
@@ -1746,6 +1747,11 @@ label {
 .header-fixed .navbar.affix .navbar-nav > li > a {
   color: #222222;
 }
+
+.header-fixed .navbar.affix .navbar-nav > li > a:hover {
+  color: #a71d1b;
+}
+
 
 .header-fixed .navbar.affix .navbar-nav > li > a:hover::before,
 .header-fixed .navbar.affix .navbar-nav > li.active > a:before {
@@ -3555,7 +3561,7 @@ footer h3 {
   border-right: 0;
   position: absolute;
   right: 0px;
-  height: 800px;
+  height: 1000px;
   width: 380px;
   opacity: 70%;
   top: 20%;
@@ -3568,7 +3574,7 @@ footer h3 {
   border-left: 0;
   position: absolute;
   left: 0px;
-  height: 800px;
+  height: 1200px;
   width: 300px;
   opacity: 70%;
   top: 15%;
@@ -3596,13 +3602,40 @@ footer h3 {
   animation: nudge 2s linear infinite;
   cursor:pointer;
   z-index:99;
-  mix-blend-mode:color-burn;
+  mix-blend-mode:difference;
+  color:#d2d2d2;
 }
 
-.logosFooter{
+/* .logosFooter{
   margin-top:50px;
+} */
+
+.brokers{
+  margin-top:0!important;
 }
 
+.d-flex{
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+}
+
+.vendasIMG{
+  max-height: 80px;
+  margin-top:0!important;
+  padding-top:0!important;
+}
+
+@media(max-width:768px){
+  .d-flex{
+    display: block;
+    text-align: center
+  }
+  .blockFooter{
+    margin-bottom:30px;
+  }
+
+}
 
 @keyframes nudge {
   20%,
