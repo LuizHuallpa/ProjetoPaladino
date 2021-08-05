@@ -307,9 +307,11 @@ function mask(o, f) {
   if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
         whats.classList.remove('nudge');
         whats.classList.add('size');
+        whats.classList.add('center');
     } else {
         whats.classList.add('nudge');
         whats.classList.remove('size');
+        whats.classList.remove('center');
     }
   }
 

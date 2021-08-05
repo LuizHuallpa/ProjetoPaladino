@@ -3403,6 +3403,10 @@ label {
     font-weight: 500;
     margin-bottom: 70px;
 }
+
+.gButtons{
+  position: relative;
+}
 .filter-button{
     font-size: 18px;
     border: 2px solid #a71d1b;
@@ -3411,6 +3415,7 @@ label {
     color: #d2d2d2;
     margin-bottom: 30px;
 	background:transparent;
+  z-index: 100;
 }
 .filter-button:hover,
 .filter-button:focus,
@@ -3437,6 +3442,11 @@ label {
 	display:none;
 	   -webkit-transition: 2s;
     transition: 2s;
+}
+
+.gallery_product .img-info p{
+ font-size: 20px;
+ font-weight: bold;
 }
 
 .gallery_product:hover .img-info{
@@ -3610,19 +3620,87 @@ footer h3 {
   position:fixed;
   bottom:120px;
   right:35px;
-  z-index:99;
-  color:#d2d2d2;
-  background-color:#333333;
-  padding: 10px;
-  /* visibility:hidden; */
-  border-radius:20px;
-  opacity:70%;
-  border:1px #333333 line;
+  z-index:1060;
+  /* background-color: #e4dcd4 !important; */
+  background-size: cover;
+  background-repeat: repeat !important;
+  box-shadow: rgb(0 0 0 / 16%) 0px 5px 40px !important;
+  width: 250px !important;
+  height: 300px !important;
+  border-radius: 10px !important;
+  transition-duration: 0.5s !important;
+  margin-bottom: 80px !important;
+
+}
+
+.bolhaWhats input, textarea{
+  margin:5px;
+  border: 0;
+}
+
+.bolhaWhats p{
+  background-color:rgba(255,245,196,255) ;
+  margin:5px;
+  border-radius:5px;
+  padding:2px;
+  
+}
+
+.textoWhats{
+  background-color: rgba(226,255,201,255);
+  
+  align-self: flex-end;
+      height: 25px;
+}
+.mensagemWhats{
+  position:absolute;
+  height: 30px;
+  bottom:5px;
+  left: 2px;
+  text-align: center;
+  width:81%;
+}
+
+.whatsHeader{
+  display:grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: #075e55;
+  padding:5px !important;
+  box-shadow: 0px 1px #00000029 !important;
+  font-weight: 600 !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  width:100%;
+  color:white;
+}
+
+.whatsHeader h6{
+  margin:0;
+  align-self: center;
+}
+
+.miniLogo img{
+  border-radius: 50%;
+}
+
+.botaoWhats{
+  width: 30px;
+  height: 30px;
+  line-height: 31px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #08847c;
+  font-size: 12px;
+  font-weight: 400;
+  color: #d2d2d2;
+  position:absolute;
+  bottom:10px;
+  right:5px;
 
 }
 
 .bolhaWhats h6{
-  color: #d2d2d2;
+  color: white;
 }
 
 .nudge{
@@ -3649,6 +3727,8 @@ footer h3 {
 
 .drow{
   flex-direction: column;
+  height: 100%;
+  align-items:end!important;
 }
 
 .vendasIMG{
@@ -3666,6 +3746,9 @@ footer h3 {
   .blockFooter{
     margin-bottom:30px;
   }
+.Vendas{
+  display:none;
+}
 
 }
 
