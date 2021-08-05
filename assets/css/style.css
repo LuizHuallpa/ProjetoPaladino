@@ -3650,7 +3650,7 @@ footer h3 {
 
 .textoWhats{
   background-color: rgba(226,255,201,255);
-  
+  width:90%;
   align-self: flex-end;
       height: 35px;
 }
