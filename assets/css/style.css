@@ -3618,7 +3618,7 @@ footer h3 {
 
 .bolhaWhats{
   position:fixed;
-  bottom:80px;
+  bottom:50px;
   right:35px;
   z-index:1060;
   /* background-color: #e4dcd4 !important; */
@@ -3631,6 +3631,7 @@ footer h3 {
   transition-duration: 0.5s !important;
   margin-bottom: 80px !important;
   display:none;
+  opacity:95%;
 
 }
 
@@ -3651,12 +3652,12 @@ footer h3 {
   background-color: rgba(226,255,201,255);
   
   align-self: flex-end;
-      height: 25px;
+      height: 35px;
 }
 .mensagemWhats{
   position:absolute;
-  height: 30px;
-  bottom:5px;
+  height: 35px;
+  bottom:2px;
   left: 2px;
   text-align: center;
   width:81%;
@@ -3685,18 +3686,26 @@ footer h3 {
 }
 
 .botaoWhats{
-  width: 30px;
-  height: 30px;
-  line-height: 31px;
-  text-align: center;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background-color: #08847c;
   font-size: 12px;
   font-weight: 400;
-  color: #d2d2d2;
-  position:absolute;
-  bottom:10px;
-  right:5px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  padding: 6px;
+
+}
+
+.botaoWhats:hover{
+
+  background-color: white;
+
+  color: #08847c;
+
 
 }
 
@@ -3708,13 +3717,13 @@ footer h3 {
   animation: nudge 2s linear infinite;
 }
 
-.size{
-  animation: size 2s linear 1;
-}
 
-/* .logosFooter{
-  margin-top:50px;
-} */
+
+@media(min-width:768px){
+  .size{
+    animation: size 2s linear 1;
+  }
+}
 
 .brokers{
   margin-top:0!important;
