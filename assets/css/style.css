@@ -3618,7 +3618,7 @@ footer h3 {
 
 .bolhaWhats{
   position:fixed;
-  bottom:120px;
+  bottom:80px;
   right:35px;
   z-index:1060;
   /* background-color: #e4dcd4 !important; */
@@ -3630,6 +3630,7 @@ footer h3 {
   border-radius: 10px !important;
   transition-duration: 0.5s !important;
   margin-bottom: 80px !important;
+  display:none;
 
 }
 
