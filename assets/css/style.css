@@ -3540,6 +3540,17 @@ footer h3 {
 
 .googleMap{
   padding-top: 50px;
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.googleMap iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 .paisQuadrados{
@@ -3549,6 +3560,7 @@ footer h3 {
 .frames{
   z-index: 50;
   position:relative;
+  max-width: 100vw;
 }
 
 
