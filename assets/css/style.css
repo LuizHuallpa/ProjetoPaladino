@@ -3467,6 +3467,7 @@ a71d1b- vermelho */
   z-index: 0;
   opacity: 90%;
   transform: rotate(-90deg);
+  left:-5px;
 
 }
 
