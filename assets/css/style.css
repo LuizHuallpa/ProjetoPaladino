@@ -3544,7 +3544,9 @@ footer h3 {
   padding-bottom:56.25%;
   position:relative;
   height:0;
-  margin:10px;
+  margin:auto;
+  width: 60vw;
+  
 }
 .googleMap iframe{
   left:0;
