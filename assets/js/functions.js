@@ -263,11 +263,11 @@ $(document).ready(function() {
  
 });
 
-function scrollDown(){
-    setTimeout(function() {
-        $("html, body").animate({ scrollTop: $(document).height() }, 'slow');
-     }, 2000);
-   }
+// function scrollDown(){
+//     setTimeout(function() {
+//         $("html, body").animate({ scrollTop: $(document).height() }, 'slow');
+//      }, 2000);
+//    }
 
 function checkScreenSize(){
     var newWindowWidth = $(window).width();
